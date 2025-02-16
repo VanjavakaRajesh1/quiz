@@ -185,10 +185,6 @@ const Quiz = () => {
   const [selectoption, setselectoption] = useState({});
   const [ansstatus, setansstatus] = useState({});
   const [score, setscore] = useState(null);
-  // const  selectcolor = (id, option) => {
-  //   const color= selectoption[id] === option ?"blue":""
-  //   return color
-  // };
   const optionselect = (e) => {
     setselectoption((prev) => {
       return { ...prev, [e.target.name]: e.target.value };
@@ -218,7 +214,7 @@ const Quiz = () => {
         <div className="row">
           {quiz.map((questions, index) => {
             return (
-              <div className="card col-4 border-0 bg-black">
+              <div className="card col-md-4 col-sm-12 border-0 bg-black">
                 <div
                   className="card-body m-2 bg-body-tertiary rounded"
                   key={index}
