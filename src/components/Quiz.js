@@ -35,6 +35,151 @@ const quiz = [
     options: ["Oxygen", "Gold", "Osmium", "Ozone"],
     correct_answer: "Oxygen",
   },
+  {
+    id: 6,
+    question: "What is the square root of 64?",
+    options: ["6", "8", "10", "12"],
+    correct_answer: "8",
+  },
+  {
+    id: 7,
+    question: "How many continents are there on Earth?",
+    options: ["5", "6", "7", "8"],
+    correct_answer: "7",
+  },
+  {
+    id: 8,
+    question: "Who painted the Mona Lisa?",
+    options: [
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Leonardo da Vinci",
+      "Claude Monet",
+    ],
+    correct_answer: "Leonardo da Vinci",
+  },
+  {
+    id: 9,
+    question: "What is the chemical symbol for water?",
+    options: ["H2O", "O2", "CO2", "NaCl"],
+    correct_answer: "H2O",
+  },
+  {
+    id: 10,
+    question: "Which gas do plants use for photosynthesis?",
+    options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    correct_answer: "Carbon Dioxide",
+  },
+  {
+    id: 11,
+    question: "Which ocean is the largest?",
+    options: [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean",
+    ],
+    correct_answer: "Pacific Ocean",
+  },
+  {
+    id: 12,
+    question: "Who developed the theory of relativity?",
+    options: [
+      "Isaac Newton",
+      "Galileo Galilei",
+      "Albert Einstein",
+      "Nikola Tesla",
+    ],
+    correct_answer: "Albert Einstein",
+  },
+  {
+    id: 13,
+    question: "Which country is famous for the Great Wall?",
+    options: ["India", "China", "Egypt", "Japan"],
+    correct_answer: "China",
+  },
+  {
+    id: 14,
+    question: "What is the capital of Japan?",
+    options: ["Seoul", "Bangkok", "Beijing", "Tokyo"],
+    correct_answer: "Tokyo",
+  },
+  {
+    id: 15,
+    question: "How many legs does a spider have?",
+    options: ["6", "8", "10", "12"],
+    correct_answer: "8",
+  },
+  {
+    id: 16,
+    question: "Which metal is the best conductor of electricity?",
+    options: ["Gold", "Silver", "Copper", "Iron"],
+    correct_answer: "Silver",
+  },
+  {
+    id: 17,
+    question: "What is the fastest land animal?",
+    options: ["Cheetah", "Lion", "Horse", "Kangaroo"],
+    correct_answer: "Cheetah",
+  },
+  {
+    id: 18,
+    question: "Who was the first person to step on the moon?",
+    options: [
+      "Buzz Aldrin",
+      "Yuri Gagarin",
+      "Neil Armstrong",
+      "Michael Collins",
+    ],
+    correct_answer: "Neil Armstrong",
+  },
+  {
+    id: 19,
+    question: "Which blood type is the universal donor?",
+    options: ["A", "B", "AB", "O"],
+    correct_answer: "O",
+  },
+  {
+    id: 20,
+    question: "Which is the longest river in the world?",
+    options: [
+      "Amazon River",
+      "Nile River",
+      "Yangtze River",
+      "Mississippi River",
+    ],
+    correct_answer: "Nile River",
+  },
+  {
+    id: 21,
+    question: "How many players are there in a football (soccer) team?",
+    options: ["9", "10", "11", "12"],
+    correct_answer: "11",
+  },
+  {
+    id: 22,
+    question: "Which gas makes up most of Earth's atmosphere?",
+    options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    correct_answer: "Nitrogen",
+  },
+  {
+    id: 23,
+    question: "What is the chemical symbol for gold?",
+    options: ["Au", "Ag", "Pb", "Fe"],
+    correct_answer: "Au",
+  },
+  {
+    id: 24,
+    question: "Which continent is the Sahara Desert located in?",
+    options: ["Asia", "South America", "Africa", "Australia"],
+    correct_answer: "Africa",
+  },
+  {
+    id: 25,
+    question: "What is the freezing point of water in Celsius?",
+    options: ["0°C", "10°C", "20°C", "32°C"],
+    correct_answer: "0°C",
+  },
 ];
 const Quiz = () => {
   const [selectoption, setselectoption] = useState({});
@@ -101,7 +246,7 @@ const Quiz = () => {
                                   ? "red"
                                   : "blue"
                                 : "black",
-                              fontWeight:"bold"
+                              fontWeight: "bold",
                             }}
                           >
                             {option}
@@ -120,7 +265,7 @@ const Quiz = () => {
         <button onClick={submitoptions} className="btn btn-success">
           submit
         </button>
-        <h1>{score}</h1>
+        <h1 className="m-3">{score}</h1>
       </div>
     </>
   );
