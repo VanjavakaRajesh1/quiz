@@ -204,7 +204,7 @@ const Quiz = () => {
         });
       }
     });
-    setscore(`${res}/${quiz.length}`);
+    setscore(`Your score is ${res}/${quiz.length}`);
     console.log(ansstatus);
   };
   return (
@@ -257,7 +257,7 @@ const Quiz = () => {
           })}
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center p-3">
         <button onClick={submitoptions} className="btn btn-success">
           submit
         </button>
